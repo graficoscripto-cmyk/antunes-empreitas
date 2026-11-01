@@ -32,8 +32,8 @@
   <meta name="twitter:image" content="https://antunes-empreitas.vercel.app/img/og-antunes.jpg">
 
   <!-- Preload Hero 4K (Mobile Vertical 9:16 + Desktop 16:9) -->
-  <link rel="preload" as="image" href="img/hero-obra-mobile.webp" media="(max-width: 768px)" type="image/webp" fetchpriority="high">
-  <link rel="preload" as="image" href="img/hero-obra-4k.webp" media="(min-width: 769px)" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="img/hero-obra-mobile-640.webp 640w, img/hero-obra-mobile-1080.webp 1080w" imagesizes="100vw" media="(max-width: 768px)" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="img/hero-obra-4k-1280.webp 1280w, img/hero-obra-4k-1920.webp 1920w, img/hero-obra-4k-2560.webp 2560w, img/hero-obra-4k-3840.webp 3840w" imagesizes="100vw" media="(min-width: 769px)" type="image/webp" fetchpriority="high">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1523,9 +1523,9 @@
   <section class="hero" id="topo">
     <div class="hero-media">
       <picture>
-        <source media="(max-width: 768px)" srcset="img/hero-obra-mobile.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="img/hero-obra-mobile-640.webp 640w, img/hero-obra-mobile-1080.webp 1080w" sizes="100vw" type="image/webp">
         <source media="(max-width: 768px)" srcset="img/hero-obra-mobile.jpg" type="image/jpeg">
-        <source srcset="img/hero-obra-4k.webp" type="image/webp">
+        <source srcset="img/hero-obra-4k-1280.webp 1280w, img/hero-obra-4k-1920.webp 1920w, img/hero-obra-4k-2560.webp 2560w, img/hero-obra-4k-3840.webp 3840w" sizes="100vw" type="image/webp">
         <img src="img/hero-obra-4k.jpg" alt="Especialista da Antunes Empreitas executando telhado cerâmico com padrão profissional" width="3840" height="2160" fetchpriority="high" decoding="async" id="heroImg">
       </picture>
     </div>
@@ -1754,7 +1754,7 @@
             <!-- Painel Lateral de Inspeção -->
             <aside class="bp-inspector" aria-live="polite">
               <div class="inspector-photo">
-                <img src="img/servico-telhado.webp" alt="Empreita de Telhado — Antunes Empreitas" id="insPhoto" width="800" height="500">
+                <img src="img/servico-telhado-1200.webp" alt="Empreita de Telhado — Antunes Empreitas" id="insPhoto" width="1200" height="900" decoding="async" loading="lazy">
                 <span class="inspector-badge" id="insBadge">SISTEMA 01 · COBERTURA</span>
               </div>
               <div class="inspector-body">
@@ -1794,8 +1794,8 @@
             <div class="srv-photo" data-lightbox="img/servico-telhado.jpg">
               <span class="srv-tag">01 · Coberturas</span>
               <picture>
-                <source srcset="img/servico-telhado.webp" type="image/webp">
-                <img src="img/servico-telhado.jpg" alt="Construção e reforma de telhados — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-telhado-480.webp 480w, img/servico-telhado-800.webp 800w, img/servico-telhado-1200.webp 1200w, img/servico-telhado-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-telhado.jpg" alt="Construção e reforma de telhados — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -1822,8 +1822,8 @@
             <div class="srv-photo" data-lightbox="img/servico-eletrica.jpg">
               <span class="srv-tag">02 · Instalações</span>
               <picture>
-                <source srcset="img/servico-eletrica.webp" type="image/webp">
-                <img src="img/servico-eletrica.jpg" alt="Quadro elétrico e fiação profissional — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-eletrica-480.webp 480w, img/servico-eletrica-800.webp 800w, img/servico-eletrica-1200.webp 1200w, img/servico-eletrica-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-eletrica.jpg" alt="Quadro elétrico e fiação profissional — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -1850,8 +1850,8 @@
             <div class="srv-photo" data-lightbox="img/servico-ar-condicionado.jpg">
               <span class="srv-tag">03 · Climatização</span>
               <picture>
-                <source srcset="img/servico-ar-condicionado.webp" type="image/webp">
-                <img src="img/servico-ar-condicionado.jpg" alt="Instalação de ar-condicionado Split — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-ar-condicionado-480.webp 480w, img/servico-ar-condicionado-800.webp 800w, img/servico-ar-condicionado-1200.webp 1200w, img/servico-ar-condicionado-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-ar-condicionado.jpg" alt="Instalação de ar-condicionado Split — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -1878,8 +1878,8 @@
             <div class="srv-photo" data-lightbox="img/servico-obras.jpg">
               <span class="srv-tag">04 · Construção</span>
               <picture>
-                <source srcset="img/servico-obras.webp" type="image/webp">
-                <img src="img/servico-obras.jpg" alt="Obras e reformas residenciais e comerciais — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-obras-480.webp 480w, img/servico-obras-800.webp 800w, img/servico-obras-1200.webp 1200w, img/servico-obras-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-obras.jpg" alt="Obras e reformas residenciais e comerciais — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -1906,8 +1906,8 @@
             <div class="srv-photo" data-lightbox="img/servico-pintura.jpg">
               <span class="srv-tag">05 · Acabamento</span>
               <picture>
-                <source srcset="img/servico-pintura.webp" type="image/webp">
-                <img src="img/servico-pintura.jpg" alt="Pintura profissional interna e externa — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-pintura-480.webp 480w, img/servico-pintura-800.webp 800w, img/servico-pintura-1200.webp 1200w, img/servico-pintura-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-pintura.jpg" alt="Pintura profissional interna e externa — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -1934,8 +1934,8 @@
             <div class="srv-photo" data-lightbox="img/servico-hidraulica.jpg">
               <span class="srv-tag">06 · Encanamento</span>
               <picture>
-                <source srcset="img/servico-hidraulica.webp" type="image/webp">
-                <img src="img/servico-hidraulica.jpg" alt="Instalações e reparos hidráulicos — Antunes Empreitas" width="1600" height="1200" loading="lazy">
+                <source srcset="img/servico-hidraulica-480.webp 480w, img/servico-hidraulica-800.webp 800w, img/servico-hidraulica-1200.webp 1200w, img/servico-hidraulica-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" type="image/webp">
+                <img src="img/servico-hidraulica.jpg" alt="Instalações e reparos hidráulicos — Antunes Empreitas" width="1600" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="srv-body">
@@ -2113,7 +2113,7 @@
   <!-- BANNER FINAL FULL-BLEED -->
   <section class="final-banner">
     <div class="final-banner-bg">
-      <img src="img/hero-obra-4k.webp" alt="Antunes Empreitas" loading="lazy">
+      <img src="img/hero-obra-4k-1920.webp" srcset="img/hero-obra-4k-1280.webp 1280w, img/hero-obra-4k-1920.webp 1920w, img/hero-obra-4k-2560.webp 2560w" sizes="100vw" alt="Antunes Empreitas" width="3840" height="2160" loading="lazy" decoding="async">
     </div>
     <div class="final-banner-scrim"></div>
     <div class="wrap">
@@ -2167,7 +2167,7 @@
           badge: "SISTEMA 01 · COBERTURA",
           titulo: "Empreita de Telhado & Coberturas",
           desc: "Madeiramento, estrutura metálica, colocação de telhas, calhas, rufos e impermeabilização completa.",
-          foto: "img/servico-telhado.webp",
+          foto: "img/servico-telhado-1200.webp",
           specs: ["Madeiramento Novo", "Telhas & Calhas", "Zero Goteiras"],
           x: 410,
           y: 96
@@ -2177,7 +2177,7 @@
           badge: "SISTEMA 02 · INSTALAÇÕES",
           titulo: "Elétrica Residencial & Comercial",
           desc: "Montagem de quadros QDC, disjuntores, fiação nova, tomadas, aterramento e iluminação em LED.",
-          foto: "img/servico-eletrica.webp",
+          foto: "img/servico-eletrica-1200.webp",
           specs: ["Quadros & Disjuntores", "Fiação Segura", "Projetos LED"],
           x: 260,
           y: 210
@@ -2187,7 +2187,7 @@
           badge: "SISTEMA 03 · CLIMATIZAÇÃO",
           titulo: "Ar-Condicionado Split & Infraestrutura",
           desc: "Passagem de tubulação de cobre embutida na obra, dreno, instalação de Split Inverter e higienização.",
-          foto: "img/servico-ar-condicionado.webp",
+          foto: "img/servico-ar-condicionado-1200.webp",
           specs: ["Infra Embutida", "Instalação Split", "Limpeza Técnica"],
           x: 425,
           y: 205
@@ -2197,7 +2197,7 @@
           badge: "SISTEMA 04 · CONSTRUÇÃO",
           titulo: "Obras, Reformas & Revestimentos",
           desc: "Alvenaria, ampliações, contrapiso nivelado, assentamento de porcelanato e reformas completas.",
-          foto: "img/servico-obras.webp",
+          foto: "img/servico-obras-1200.webp",
           specs: ["Alvenaria & Laje", "Porcelanato", "Reforma Completa"],
           x: 425,
           y: 305
@@ -2207,7 +2207,7 @@
           badge: "SISTEMA 05 · ACABAMENTO",
           titulo: "Pintura Interna, Externa & Fachadas",
           desc: "Aplicação de massa corrida, lixamento técnico, tratamento de trincas e pintura de alto acabamento.",
-          foto: "img/servico-pintura.webp",
+          foto: "img/servico-pintura-1200.webp",
           specs: ["Massa Corrida", "Fachadas", "Acabamento Fino"],
           x: 575,
           y: 215
@@ -2217,7 +2217,7 @@
           badge: "SISTEMA 06 · ENCANAMENTO",
           titulo: "Hidráulica de Água Fria, Quente & Esgoto",
           desc: "Tubulações novas, caixas d'água, registros, pressurizadores, louças, metais e eliminação de vazamentos.",
-          foto: "img/servico-hidraulica.webp",
+          foto: "img/servico-hidraulica-1200.webp",
           specs: ["Água & Esgoto", "Caixas d'Água", "Caça-Vazamentos"],
           x: 575,
           y: 310
